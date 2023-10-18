@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>People</h1>
+{% for ceo in ceos %}
+<ul>
+    <l1>{{ ceo.name }}</l1>
+    <li>{{ ceo.slug }}</li>
+    <li>{{ ceo.first_year_active }}</li>
+</ul>
+{% endfor %}
+
+
+{% endblock %}
